@@ -45,7 +45,7 @@ func main() {
 
 	h = fasthttp.CompressHandler(h)
 
-	if err := fasthttp.ListenAndServe(":8088", h); err != nil {
+	if err := fasthttp.ListenAndServe(":80", h); err != nil {
 	}
 }
 
