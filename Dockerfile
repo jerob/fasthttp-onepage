@@ -20,6 +20,7 @@ MAINTAINER Jeremie Robert <appydo@gmail.com>
 
 # copy static linked smtp executable
 COPY --from=0 /go/webserver webserver
+ADD file /file
 
 # tell how to run this container
 CMD ["./webserver","/file"]
